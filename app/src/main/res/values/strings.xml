@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LearningDataBinding</string>
+    <string name="all_loading">Loading...</string>
+</resources>
