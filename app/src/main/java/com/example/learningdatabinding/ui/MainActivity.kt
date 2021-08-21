@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val view = dataBinding.root
         setContentView(view)
 
-        var carComponent = DaggerCarComponent.create()
+        val carComponent = DaggerCarComponent.create()
         carComponent.injectCarIntoMainActivity(this)
 
         car.start()

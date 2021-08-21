@@ -8,4 +8,3 @@ class DieselEngine @Inject constructor() : Engine {
         println("DieselEngine started")
     }
 }
-cd
