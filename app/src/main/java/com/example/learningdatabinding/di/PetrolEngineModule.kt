@@ -1,11 +1,13 @@
 package com.example.learningdatabinding.di
 
-import dagger.Binds
 import dagger.Module
+import dagger.Provides
 
 @Module
-abstract class PetrolEngineModule {
+class PetrolEngineModule {
 
-    @Binds
-    abstract fun providesPetrolEngine(petrolEngine: PetrolEngine): Engine
+    @Provides
+    fun providesPetrolEngine(petrolEngine: PetrolEngine): Engine {
+        return petrolEngine
+    }
 }
